@@ -32,10 +32,10 @@ public class ButtonSample {
         //1. 建立 button，text 設定為 Find
         //2. 建立 icon
         //3. 設定 icon
-        JButton button=null;
-        ImageIcon icon=null;
+        JButton button=new JButton("find");
+        ImageIcon icon=new ImageIcon(new URL("https://www.moedict.tw/%E9%83%BD%E4%B8%AD%E7%B4%99%E8%B2%B4.png"));
         ImageIcon icon2=new ImageIcon(icon.getImage().getScaledInstance(25, 25, Image.SCALE_SMOOTH));
-        button.setIcon();
+        button.setIcon(icon2);
         ////////////////////////////////////
         frame.add(button);
         frame.getRootPane().setDefaultButton(button);

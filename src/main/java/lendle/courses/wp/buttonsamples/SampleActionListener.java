@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
  *
  * @author lendle
  */
-public class SampleActionListener implements ActionListener{
+//public class SampleActionListener implements ActionListener{
     //1. override ActionListener
     //2. 裡面寫 System.out.println("clicked!");
-}
+
