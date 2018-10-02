@@ -5,13 +5,22 @@
  */
 package lendle.courses.wp.buttonsamples;
 
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
  *
  * @author lendle
  */
-//public class SampleActionListener implements ActionListener{
-    //1. override ActionListener
+
+public class SampleActionListener implements ActionListener{
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        System.out.println("click");
+    }
+
+}
+//1. override ActionListener
     //2. 裡面寫 System.out.println("clicked!");
 
