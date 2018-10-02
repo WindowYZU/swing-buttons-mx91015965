@@ -13,6 +13,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
+import javax.swing.JToggleButton;
 import javax.swing.WindowConstants;
 
 /**
@@ -32,10 +33,12 @@ public class RadioButtonSample {
         JRadioButton radio1 = new JRadioButton("radio1");
         JRadioButton radio2 = new JRadioButton("radio2");
         JCheckBox check1=new JCheckBox("check1");
+        JToggleButton toggle1= new JRadioButton("toggle");
         
         frame.add(radio1);
         frame.add(radio2);
         frame.add(check1);
+        frame.add(toggle1);
         //建立 ButtonGroup，把 radio1, radio2 加到 ButtonGroup
         ActionListener a=new ActionListener() {
             @Override
@@ -48,9 +51,12 @@ public class RadioButtonSample {
         ga.add(radio1);
         ga.add(radio2);
         ga.add(check1);
+        ga.add(toggle1);
         radio1.addActionListener(a);
         radio2.addActionListener(a);
         check1.addActionListener(a);
+        toggle1.addActionListener(a);
+       
         ////////////////////////////////////////////////////
         
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
