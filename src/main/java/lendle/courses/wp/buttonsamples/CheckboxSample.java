@@ -27,6 +27,7 @@ public class CheckboxSample {
         JFrame frame = new JFrame();
         frame.setSize(800, 600);
         frame.setLayout(new FlowLayout());
+        frame.setLocationRelativeTo(null);
         JCheckBox check1 = new JCheckBox("check1");
         
         JCheckBox check2 = new JCheckBox("check2");
